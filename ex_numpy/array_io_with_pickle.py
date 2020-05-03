@@ -16,8 +16,8 @@ reload(mymod)
 
 # make sure the output directory exists
 this_dir = os.path.abspath('.').split('/')[-1]
-this_parent = os.path.abspath('.').split('/')[-2]
-out_dir = '../../' + this_parent + '_output/'
+this_parent = os.path.abspath('.').split('/')[-1]
+out_dir = this_parent + '_output/'
 print('Creating ' + out_dir + ', if needed')
 mymod.make_dir(out_dir)
 
